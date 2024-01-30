@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.firsthome{
+    background:url("./images/homebackground.jpg");
+    background-position:right;
+    background-size:cover;
+}
+
+
+.allwomen::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:0;
+    height:5px;
+    background:red;
+    transition:1s;
+
+}
+
+.allwomen:hover::after{
+    width: 36.7%;
+
+}
